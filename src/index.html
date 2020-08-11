@@ -8,7 +8,26 @@
   </head>
   <body>
     <div>
-      <h1>Olá mundo.</h1>
+      <h1>Olá mundo. Calcule o valor do seu Freela</h1>
+    </div>
+    <div class="container">
+      <div class="form">
+        <label for="valor_do_projeto">Valor total do Projeto</label>
+        <input type="number" id="valor_do_projeto">
+
+        <label for="horas_trabalhdas">Quantidade de horas trabalhadas por dia</label>
+        <input type="number" id="horas_trabalhdas">
+
+        <label for="dias_efetivos">Dias efetivos trabalhados na semana</label>
+        <input type="number" id="dias_efetivos">
+
+        <label for="ferias">Dias de férias pelo projeto</label>
+        <input type="number" id="ferias">
+      </div>
+      <div class="resultado">
+        <button type="submit" onclick="calcular()">Calcular</button>
+        <h2>Valor/hora: R$ 0,00</h2>
+      </div>
     </div>
     <script src="./main.js"></script>
   </body>
